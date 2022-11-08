@@ -12,9 +12,9 @@ def informacion(request):
 
     return render(request, 'ProyectoWebApp/Información.html')
 
-def tienda(request):
+# def tienda(request):
 
-    return render(request, 'ProyectoWebApp/Tienda.html')
+#     return render(request, 'ProyectoWebApp/Tienda.html')
 
 
 
