@@ -36,7 +36,7 @@ def procesar_pedidos(request):
 
     messages.success(request, "El pedido se ha creado correctamente")
 
-    return redirect("../tienda")
+    return redirect("Tienda")
 
 def enviar_mail(**kwargs):
 
