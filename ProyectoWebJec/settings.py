@@ -35,7 +35,7 @@ SECRET_KEY = 'django-insecure-ik%$zqoe9(4jhb00=ymuf^3p0znmq=e+og@dvp!m5$_7g$m1($
 
 DEBUG = True
 
-ALLOWED_HOSTS = ['shopping-virtual.up.railway.app', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['shoppingvirtual.up.railway.app', 'localhost', '127.0.0.1']
 
 # Application definition
 
