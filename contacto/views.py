@@ -40,4 +40,4 @@ def contacto(request):
             return redirect("./?novalido")
 
 
-    return render(request, './contacto.html',{'mi_formulario':formulario_contacto})
+    return render(request, './Contacto.html',{'mi_formulario':formulario_contacto})
