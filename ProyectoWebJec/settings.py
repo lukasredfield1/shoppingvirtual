@@ -24,14 +24,18 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-@ps(c+wd#bnjtjg=i#ylpykx(hu@+$)695i^q4m_%5b5d7vl06'
+#SECRET_KEY = 'django-insecure-@ps(c+wd#bnjtjg=i#ylpykx(hu@+$)695i^q4m_%5b5d7vl06'
+SECRET_KEY = 'django-insecure-ik%$zqoe9(4jhb00=ymuf^3p0znmq=e+og@dvp!m5$_7g$m1($'
 
 # SECURITY WARNING: don't run with debug turned on in production!
+# DEBUG = True
+# """Cuando el proyecto termine y lo subamos a un servidor hay que cambiar el modo "DEBUG" osea modo "Desarrollo" por "false"."""
+
+# ALLOWED_HOSTS = []
+
 DEBUG = True
-"""Cuando el ptoyecto termine y lo subamos a un servidor hay que cambiar el modo "DEBUG" osea modo "Desarrollo" por "false"."""
 
-ALLOWED_HOSTS = []
-
+ALLOWED_HOSTS = ['shopping-virtual.up.railway.app', 'localhost', '127.0.0.1']
 
 # Application definition
 
@@ -136,11 +140,24 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
-STATIC_URL = 'static/'
+# STATIC_URL = 'static/'
+
+# STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+# STATICFILES_DIR = ( os.path.join(BASE_DIR, 'static'), )
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATIC_URL = 'static/'
 
-STATICFILES_DIR = ( os.path.join(BASE_DIR, 'static'), )
+# Default primary key field type
+# https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
+
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, 'static'),
+)
+
 
 MEDIA_URL='/media/'
 MEDIA_ROOT= BASE_DIR / 'media' / 'servicios'
